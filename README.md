@@ -4,6 +4,8 @@ A Claude skill that guides a **Domain-Driven Design refactor of a data platform 
 
 It is not a catalogue of DDD patterns. It is the working method for getting a tangled data platform from "every change breaks a report" to clear bounded contexts, over weeks and many sessions, without breaking production.
 
+![Diamond architecture of one bounded context, and the ten contexts of a power-trading data platform](docs/diamond-architecture.png)
+
 ## Why it exists
 
 Most DDD material is about transactional systems: orders, aggregates, invariants. Data platforms have different hard problems:
@@ -32,7 +34,10 @@ The method in this skill comes from a real refactor of a power-trading data plat
 4. **Survives many sessions.** A `REFACTOR_PLAN.md` in your repo holds the step table and a "current status" handover, so a new session can continue where the last one stopped.
 5. **Never breaks production.** Golden-master checks, a separate dev worktree, parallel runs compared row by row, one kind of change per step, rollback tags on every merge, and rehearsed cutovers.
 
-See it on a real (synthetic) messy pipeline: **[example run](docs/example-run.md)**.
+Two examples:
+
+- **[Example run](docs/example-run.md):** the skill on a deliberately messy test pipeline, with and without the skill.
+- **[Real-world case](skills/data-platform-ddd-refactor/examples/power-trading.md):** the power-trading data platform this method came from, sanitised, from assessment to first new feature.
 
 The default order: safety net → glossary → context map → shared kernel → one template context → the other upstream contexts → events and data quality → downstream contexts → storage schema → consumers → first new feature. It explains when to reorder.
 
