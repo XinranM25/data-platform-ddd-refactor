@@ -1,0 +1,15 @@
+{
+  "name": "data-platform-ddd-refactor",
+  "description": "Claude Code plugin for guided Domain-Driven Design refactoring of live data platforms.",
+  "owner": {
+    "name": "Xinran Ma",
+    "url": "https://github.com/XinranM25"
+  },
+  "plugins": [
+    {
+      "name": "data-platform-ddd-refactor",
+      "source": "./",
+      "description": "Step-by-step DDD refactor of a live data platform, with assessment, working modes, decision logs and a production safety net."
+    }
+  ]
+}

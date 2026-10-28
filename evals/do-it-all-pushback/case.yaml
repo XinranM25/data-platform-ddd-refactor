@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: do-it-all-pushback
+expected_outcome: |
+  Uses fast mode: says so in one line, does a short assessment, builds a safety net (characterisation tests pinning today's outputs) before moving code, restructures the code itself while keeping outputs identical, records the decisions it assumed, and does NOT apply output-changing fixes (Fahrenheit conversion, fill-with-zero, gap rule) in the restructure: it batches them with recommendations for one approval, prepared but not applied.
+context:
+  scaffold_script: place-files.sh

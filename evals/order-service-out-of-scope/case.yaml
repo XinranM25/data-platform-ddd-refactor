@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: order-service-out-of-scope
+expected_outcome: |
+  Recognises a transactional system, not a data platform. Says plainly which parts of the data-platform method do not fit (data quality, long tables) and that the core design work is aggregates, invariants and transaction boundaries; points out concrete invariant violations (stock can go negative, lines added after payment, stock not returned on failed payment, capture after ship). Still helps: safety net, glossary, context boundaries, first steps.
+context:
+  scaffold_script: place-files.sh

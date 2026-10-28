@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: move-plus-fix-not-mixed
+expected_outcome: |
+  Implements the step 4 price move (market_prices context beside the legacy code, outputs unchanged) and keeps the fillna(0) fix out of that move: it is done or proposed as its own behaviour-change sub-step with its own verification, and the reply explains why. Plan updated.
+context:
+  scaffold_script: place-files.sh

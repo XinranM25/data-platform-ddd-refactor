@@ -1,0 +1,2 @@
+15 2 * * *  cd /opt/coldchain && python run_all.py
+0 6 * * 1   cd /opt/coldchain && python kpi/weekly_export.py

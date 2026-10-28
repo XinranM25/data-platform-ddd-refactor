@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: tiny-script-not-worth-it
+expected_outcome: |
+  Reads the script and README, recognises a single-source, single-user, short-lived script, and advises against a DDD refactor (verdict 'not worth it' / not now), with evidence from the repo and cheaper suggestions. Does not start restructuring the code.
+context:
+  scaffold_script: place-files.sh

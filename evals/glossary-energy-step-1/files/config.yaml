@@ -1,0 +1,11 @@
+farms:
+  - name: Hollmoor
+    capacity_mw: 50          # used by the curtailment floor
+    scada_id: HM-01
+    forecast_id: hollmoor_wf
+  - name: Riedfeld
+    capacity_mw: 32
+    scada_id: RF-07
+    forecast_id: riedfeld
+market: DE
+curtailment_floor_share: 0.1

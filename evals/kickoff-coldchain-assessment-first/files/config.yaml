@@ -1,0 +1,14 @@
+sites:
+  - name: North DC
+    vendor_a_id: WH-NORTH
+    vendor_b_id: "3"
+  - name: South DC
+    vendor_a_id: WH-SOUTH
+    vendor_b_id: "7"
+  - name: Harbour
+    vendor_a_id: WH-HARB
+    vendor_b_id: "9"
+limits:
+  max_temp: 8
+  min_temp: 2
+db_path: data/coldchain.db

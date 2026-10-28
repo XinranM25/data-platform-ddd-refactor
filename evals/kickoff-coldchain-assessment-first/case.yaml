@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: kickoff-coldchain-assessment-first
+expected_outcome: |
+  Starts with an assessment of whether DDD fits, citing concrete evidence from the code (e.g. Fahrenheit stored as temp, fillna(0) hiding gaps, seconds labelled minutes, DST day_range bug, wrong-way imports, KPI export re-running the nightly job). Gives a verdict and the expected contexts, asks the owner the questions code cannot answer, and stops for a decision instead of moving code.
+context:
+  scaffold_script: place-files.sh

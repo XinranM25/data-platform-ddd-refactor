@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: glossary-energy-step-1
+expected_outcome: |
+  Starts step 1: drafts docs/glossary.md from the code (no code changes) with numbered questions for the owner, catching the energy-specific traps: forecast_mw holding MWh per period, SCADA kW per 10 minutes, DST day lengths and local timestamps without offset, prices keyed by bidding zone not farm, latest forecast overwriting the day-ahead version, capacity 50 in config vs 49.6 from SCADA, imbalance published late, missing as 0, hourly vs 15-minute prices. Leaves the glossary as a draft for the owner to decide.
+context:
+  scaffold_script: place-files.sh

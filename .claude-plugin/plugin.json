@@ -1,0 +1,13 @@
+{
+  "name": "data-platform-ddd-refactor",
+  "version": "0.1.0",
+  "description": "Guide a step-by-step Domain-Driven Design refactor of a live data platform: fit assessment, three working modes, numbered decision logs, golden-master safety net and production merge discipline. Includes an energy and power-trading domain pack.",
+  "author": {
+    "name": "Xinran Ma",
+    "url": "https://github.com/XinranM25"
+  },
+  "homepage": "https://github.com/XinranM25/data-platform-ddd-refactor",
+  "repository": "https://github.com/XinranM25/data-platform-ddd-refactor",
+  "license": "MIT",
+  "keywords": ["ddd", "domain-driven-design", "refactoring", "data-platform", "data-engineering", "etl", "energy", "power-trading"]
+}

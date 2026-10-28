@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: resume-windfarm-from-step-3
+expected_outcome: |
+  Reads the plan's current status, glossary and context map; summarises where things stand; proposes step 4 (template context market_prices) with its sub-steps and the decisions needed; does not re-ask decided items (T1-T8, C1-C4) and does not fix the NULL-vs-0 bug the owner deferred; waits for a go-ahead before writing code.
+context:
+  scaffold_script: place-files.sh
