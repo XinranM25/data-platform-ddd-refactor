@@ -32,6 +32,8 @@ The method in this skill comes from a real refactor of a power-trading data plat
 4. **Survives many sessions.** A `REFACTOR_PLAN.md` in your repo holds the step table and a "current status" handover, so a new session can continue where the last one stopped.
 5. **Never breaks production.** Golden-master checks, a separate dev worktree, parallel runs compared row by row, one kind of change per step, rollback tags on every merge, and rehearsed cutovers.
 
+See it on a real (synthetic) messy pipeline: **[example run](docs/example-run.md)**.
+
 The default order: safety net → glossary → context map → shared kernel → one template context → the other upstream contexts → events and data quality → downstream contexts → storage schema → consumers → first new feature. It explains when to reorder.
 
 ## Install
